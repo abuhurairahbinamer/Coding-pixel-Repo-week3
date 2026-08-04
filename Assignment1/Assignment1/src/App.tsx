@@ -7,6 +7,7 @@ import P3 from '../Practice/P3'
 import P4 from '../Practice/p4'
 import P5 from '../Practice/p5'
 import P6 from '../Practice/P6'
+import useInterval from '../Practice/P7'
 import { useState } from 'react'
 function App() {
 const [ToggleforP6Tasks,setToogle]=useState(true);
@@ -17,6 +18,10 @@ const result=ToggleforP6Tasks? <P6/>:""
 // p1 task with deeper 
 ToggleP1Task()
 P5()
+//p7 task
+useInterval(()=>console.log("P7 task done with deeper"),5000)
+// useInterval(()=>console.log("P7 task done with deeper"),null)
+
 // p1 task with deeper 
   return (
     <>
