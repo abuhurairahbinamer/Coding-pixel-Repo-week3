@@ -1,0 +1,7 @@
+.cursor{
+    cursor: pointer;
+    color: blue;
+}
+.cursor:hover{
+    color: rgb(96, 96, 255);
+}
