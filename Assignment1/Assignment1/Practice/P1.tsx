@@ -52,3 +52,5 @@ console.log('p1 task done with deeper (calling toggle twice with initial value=f
 
   return "";
 }
+//Deeper
+//"Updater form ensures each update uses the latest state, avoiding stale closures when React batches updates."
