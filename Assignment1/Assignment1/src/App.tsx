@@ -18,9 +18,9 @@ ToggleP1Task()
       <ToggleComponent/>
     </div>
     <div>
-      {/*  p1 task with deeper  */}
+      {/*  p3 task with deeper  */}
       <P3/>
-      {/*  p1 task with deeper  */}
+      {/*  p3 task with deeper  */}
     </div>
     </>
   )
