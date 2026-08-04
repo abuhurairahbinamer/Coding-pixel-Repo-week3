@@ -4,6 +4,7 @@ import ToggleComponent from './components/Toggle'
 import './App.css'
 import ToggleP1Task from '../Practice/P1'
 import P3 from '../Practice/P3'
+import P4 from '../Practice/p4'
 
 function App() {
 // p1 task with deeper 
@@ -21,6 +22,12 @@ ToggleP1Task()
       {/*  p3 task with deeper  */}
       <P3/>
       {/*  p3 task with deeper  */}
+    </div>
+    <div>
+      <br /><br />
+        {/*  p4 task with deeper  */}
+      <P4/>
+        {/*  p4 task with deeper  */}
     </div>
     </>
   )
