@@ -5,10 +5,11 @@ import './App.css'
 import ToggleP1Task from '../Practice/P1'
 import P3 from '../Practice/P3'
 import P4 from '../Practice/p4'
-
+import P5 from '../Practice/p5'
 function App() {
 // p1 task with deeper 
 ToggleP1Task()
+P5()
 // p1 task with deeper 
   return (
     <>
