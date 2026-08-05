@@ -4,7 +4,7 @@ import { useCountries } from "./hooks/useCountries";
 import SearchBar from "./components/SearchBar";
 import RegionFilter from "./components/RegionFilter";
 import CountryGrid from "./components/CountryGrid";
-
+import '../Practice/P2'
 export default function App() {
   const { data, loading, error } = useCountries();
   const [search, setSearch] = useState("");
