@@ -2,7 +2,7 @@
 import { useFilter } from "../context/FilterContext";
 import type { Country } from "../types/country";
 import CountryCard from "./CountryCard";
-
+import {applyFilters} from '../../Practice/p7'
 type Props = {
   countries: Country[];
   search: string;
@@ -13,12 +13,8 @@ export default function CountryGrid({ countries, search ,state}: Props) {
   const { region } = useFilter();
 
   //  compute BEFORE return
-  const filtered = countries.filter((c) => {
-    const matchesName = c.name.common.toLowerCase().includes(search.toLowerCase());
-    const matchesRegion = region === "All" || c.region === region;
-    return matchesName && matchesRegion;
-  });
-
+  const filtered = applyFilters(countries,{search,region})
+  
   if (state==='empty') {
     return <p className="text-center mt-5">No countries found</p>;
   }
