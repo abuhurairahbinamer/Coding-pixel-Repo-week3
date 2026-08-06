@@ -17,7 +17,7 @@ export function deriveState<T extends { name: { common: string }  }>({
   if (error) return "error";
 
   const visible = data.filter((item) =>
-    item.name.common.toLowerCase().includes(search.toLowerCase())
+    item.name.common.toLowerCase().includes(search.trim().toLowerCase())
   );
 
   if (visible.length === 0) return "empty";
