@@ -5,9 +5,10 @@ type FilterOption={
 }
 
 export const applyFilters=(countries:Country[], { search, region }:FilterOption)=>{
+ let trimmedSearch=search.trim();
   return countries
     .filter(c => region === "All" || c.region === region)
-    .filter(c => c.name.common.toLowerCase().includes(search.toLowerCase()));
+    .filter(c =>trimmedSearch===""?true:c.name.common.toLowerCase().includes(trimmedSearch.toLowerCase()));
 }
 //Deeper
 // The order of filters doesn’t change the final result, but it can affect Performance. It really depends on which filter removes more items. If you apply the stricter filter first, it reduces the number of elements early, so the next filter has less work to do, making the overall process faster.So it depends upon situation.In either case the performance can increase
