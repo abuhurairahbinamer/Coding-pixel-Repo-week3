@@ -4,17 +4,22 @@ import { useCountries } from "./hooks/useCountries";
 import SearchBar from "./components/SearchBar";
 import RegionFilter from "./components/RegionFilter";
 import CountryGrid from "./components/CountryGrid";
-import '../Practice/P2'
+import '../Practice/P2';
+import {deriveState} from '../Practice/P4';
+
 export default function App() {
   const { data, loading, error } = useCountries();
   const [search, setSearch] = useState("");
-  if (loading) return(
-    <div className="flex flex-col items-center mt-10 gap-3">
+  const result=deriveState({data,loading,error,search});
+  if(result==='loading'){
+    return(
+ <div className="flex flex-col items-center mt-10 gap-3">
   <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
   <p className="text-gray-600">Loading countries...</p>
 </div>
-  )
-  if (error) return <p className="text-center mt-10 text-red-500">{error}</p>;
+)
+  }
+ if(result==="error") {return <p className="text-center mt-10 text-red-500">{error}</p>;}
 
   return (
     <div className="p-4">
@@ -23,7 +28,7 @@ export default function App() {
         <RegionFilter />
       </div>
 
-      <CountryGrid countries={data} search={search} />
+      <CountryGrid state={result} countries={data} search={search} />
     </div>
   );
 }

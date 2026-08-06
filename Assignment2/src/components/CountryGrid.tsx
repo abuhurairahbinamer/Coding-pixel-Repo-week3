@@ -6,9 +6,10 @@ import CountryCard from "./CountryCard";
 type Props = {
   countries: Country[];
   search: string;
+  state:string;
 };
 
-export default function CountryGrid({ countries, search }: Props) {
+export default function CountryGrid({ countries, search ,state}: Props) {
   const { region } = useFilter();
 
   //  compute BEFORE return
@@ -18,10 +19,10 @@ export default function CountryGrid({ countries, search }: Props) {
     return matchesName && matchesRegion;
   });
 
-  if (filtered.length === 0) {
+  if (state==='empty') {
     return <p className="text-center mt-5">No countries found</p>;
   }
-
+if(state==="results"){
   return (
     <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {filtered.map((c) => (
@@ -29,4 +30,5 @@ export default function CountryGrid({ countries, search }: Props) {
       ))}
     </div>
   );
+}
 }
