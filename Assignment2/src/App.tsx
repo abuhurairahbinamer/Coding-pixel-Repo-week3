@@ -1,6 +1,6 @@
 // src/App.tsx
 import { useState } from "react";
-import { useCountries } from "./hooks/useCountries";
+import { useCountries } from "../Practice/P3";
 import SearchBar from "./components/SearchBar";
 import RegionFilter from "./components/RegionFilter";
 import CountryGrid from "./components/CountryGrid";
