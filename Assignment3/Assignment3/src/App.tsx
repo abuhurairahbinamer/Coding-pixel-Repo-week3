@@ -5,6 +5,7 @@ import Spinner from './components/spinner'
 import { useState } from "react";
 import { users } from "./utils/utils";
 import { useCallback } from "react";
+import P3 from '../Practice/P3/parent'
 function App() {
   const [text, setText] = useState("");
 // console.log('parent component rendered')
@@ -37,6 +38,8 @@ setText(e.target.value)
     <Spinner  focus="focus:border-violet-500 focus:border-t-transparent" hover="hover:border-orange-500 hover:border-t-transparent" size="lg" color="green"/>
 
 <br />
+<h1>Pratice questions</h1>
+<P3/>
     </div>
   )
 }

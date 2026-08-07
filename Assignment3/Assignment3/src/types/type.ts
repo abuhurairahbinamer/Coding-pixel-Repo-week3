@@ -67,3 +67,10 @@ export type User = {
   email: string;
   status: "Active" | "Inactive";
 };
+
+export type Style = {
+  style: {
+    margin: number;
+  };
+func:()=>void;
+};
