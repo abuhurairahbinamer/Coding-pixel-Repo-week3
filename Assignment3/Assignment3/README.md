@@ -28,6 +28,8 @@ I created 4 reusable components with prop variants and custom Tailwind `hover` /
 
 ---
 
+## Note:To check re-rendering you can enter the text in input filed in Input component
+
 ##  Performance Optimization: Detailed Breakdown for Each Component
 
 While building the main `App` component, I noticed a performance issue: whenever a user types into the `Input` box, the parent state (`text`) updates on every keystroke, causing `<App />` to re-render.
