@@ -19,6 +19,7 @@ setText(e.target.value)
 
   return (
     <div>
+      <p className="text-2xl"><b>Note:To check re-rendering you can enter the text in input filed</b> </p>
       <br />
    <Button variant="danger" focus="focus:bg-green-500 focus:rounded-full" hover="hover:bg-blue-500" onClick={func}>hellow wolrd</Button>
    <br />
