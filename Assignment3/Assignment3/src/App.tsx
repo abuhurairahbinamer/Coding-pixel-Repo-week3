@@ -6,6 +6,7 @@ import { useState } from "react";
 import { users } from "./utils/utils";
 import { useCallback } from "react";
 import P3 from '../Practice/P3/parent'
+import P4 from '../Practice/p4/Parent'
 function App() {
   const [text, setText] = useState("");
 // console.log('parent component rendered')
@@ -41,6 +42,7 @@ setText(e.target.value)
 <br />
 <h1>Pratice questions</h1>
 <P3/>
+<P4/>
     </div>
   )
 }
