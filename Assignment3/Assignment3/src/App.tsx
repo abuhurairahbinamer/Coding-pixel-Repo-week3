@@ -10,6 +10,7 @@ import P4 from '../Practice/p4/Parent'
 import P5 from '../Practice/p5/parent'
 import P6 from '../Practice/p6/parent'
 import P7 from '../Practice/p7/Parent'
+import P8 from '../Practice/p8/p8'
 function App() {
   const [text, setText] = useState("");
 // console.log('parent component rendered')
@@ -49,6 +50,7 @@ setText(e.target.value)
 <P5/>
 <P6/>
 <P7/>
+<P8/>
     </div>
   )
 }
