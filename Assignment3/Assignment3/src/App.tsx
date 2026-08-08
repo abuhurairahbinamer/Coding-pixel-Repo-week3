@@ -8,6 +8,7 @@ import { useCallback } from "react";
 import P3 from '../Practice/P3/parent'
 import P4 from '../Practice/p4/Parent'
 import P5 from '../Practice/p5/parent'
+import P6 from '../Practice/p6/parent'
 function App() {
   const [text, setText] = useState("");
 // console.log('parent component rendered')
@@ -45,8 +46,10 @@ setText(e.target.value)
 <P3/>
 <P4/>
 <P5/>
+<P6/>
     </div>
   )
 }
+
 
 export default App
