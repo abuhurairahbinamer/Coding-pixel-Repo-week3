@@ -3,7 +3,7 @@ import Child from "./child";
 
 const P7 = () => {
   const [count, setCount] = useState(0);
-
+console.log('p7 task : parent compoenent rendered')
   return (
     <div>
          <p className="my-4 mx-2 p-4 bg-cyan-700/80 w-80 text-center "><b>P7 task done with deeper below</b></p>
