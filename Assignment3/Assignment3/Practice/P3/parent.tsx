@@ -7,6 +7,7 @@ const P3 = () => {
     console.log('Deeper button')
     },[])
   return (<>
+   <p className="my-4 mx-2 p-4 bg-cyan-700/80 w-80 text-center "><b>P3 task done with deeper below</b></p>
     <div><Child func={func} style={memoizedStyle}/></div>
     </>
   )
